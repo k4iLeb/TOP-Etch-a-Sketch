@@ -13,9 +13,21 @@ body {
 }
 
 .btn {
-  width: 100px;
-  height: 30px;
+  width: 250px;
+  height: 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  stroke: black;
   margin: 5px auto;
+  background-color: #5a7ae4;
+  border: 0;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #4467db;
+  cursor: pointer;
 }
 
 .container {
@@ -26,15 +38,4 @@ body {
   justify-content: center;
 
   /* gap: 2px; */
-}
-
-.sqrDiv {
-  /* width: 64px;
-  height: 64px; */
-  background-color: rgba(red, green, blue, alpha);
-  /* border: 1px solid black; */
-}
-
-.sqrDiv:hover {
-  background-color: #00000040;
 }

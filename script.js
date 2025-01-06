@@ -29,19 +29,26 @@ function createSqr(num) {
     let blue = randomColor();
     sqrDiv.setAttribute(
       "style",
-      `background-color:rgba(${red}, ${green}, ${blue}, .1);
+      `background-color:rgba(${red}, ${green}, ${blue});
+      opacity: 0.1;
       width: ${960 / num}px;
       height: ${960 / num}px;
       `
     );
+
+    // Darken on each hover by 10%
+    sqrDiv.addEventListener("mouseover", (e) => {
+      let opacity = +e.target.style.opacity;
+      if (opacity < 1) {
+        e.target.style.opacity = opacity + 0.1;
+      }
+    });
+
     container.appendChild(sqrDiv);
   }
 }
-
-// ========= LISTENERS ===============
 
 // Randomize rgb squares
 function randomColor() {
   return Math.floor(Math.random() * 255) + 1;
 }
-// Darken on each hover by 10%
