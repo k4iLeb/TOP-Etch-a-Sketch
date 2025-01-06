@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid 1px black; */
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  margin: 5px auto;
+}
+
+.container {
+  width: 960px;
+  margin: 5px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  /* gap: 2px; */
+}
+
+.sqrDiv {
+  /* width: 64px;
+  height: 64px; */
+  background-color: rgba(red, green, blue, alpha);
+  /* border: 1px solid black; */
+}
+
+.sqrDiv:hover {
+  background-color: #00000040;
+}
